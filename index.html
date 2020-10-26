@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Measurements</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="shortcut icon" href="https://fontawesome.com/icons/calculator?style=solid" type="image/x-icon">
+  <!-- icon -->
+  <link rel="shortcut icon" href="./img/calculator icon.png" type="image/x-icon">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="phone container">
+    <div class="phone-bg">
+      <div class="calculator">
+        <!-- input field -->
+        <div class="input-field">
+          <input type="text" name="answer" id="enter">
+        </div>
+        <!-- input field -->
+        <!-- numpad -->
+        <div class="buttons">
+          <!-- first row -->
+          <div class="row">
+            <div class="col-9">
+              <div class="row bracket-container">
+                <div class="col-6 brackets">
+                  <input class="calculator-button" type="button" value="(" onclick="openingBracket()">
+                </div>
+                <div class="col-6 brackets">
+                  <input class="calculator-button" type="button" value=")" onclick="closingBracket()">
+                </div>
+              </div>
+            </div>
+            <div class="col-3 button-container">
+              <input class="calculator-button symbol" type="button" value="=" onclick="checkResult()">
+            </div>
+          </div>
+          <!-- first row -->
+          <!-- second row -->
+          <div class="row">
+            <div class="col-3 button-container">
+              <input class="calculator-button" type="button" value="7" onclick="input7()">
+            </div>
+            <div class="col-3 button-container">
+              <input class="calculator-button" type="button" value="8" onclick="input8()">
+            </div>
+            <div class="col-3 button-container">
+              <input class="calculator-button" type="button" value="9" onclick="input9()">
+            </div>
+            <div class="col-3 button-container">
+              <input class="calculator-button symbol" type="button" value="+" onclick="inputAdd()">
+            </div>
+          </div>
+          <!-- second row -->
+          <!-- third row -->
+          <div class="row">
+            <div class="col-3 button-container">
+              <input class="calculator-button" type="button" value="4" onclick="input4()">
+            </div>
+            <div class="col-3 button-container">
+              <input class="calculator-button" type="button" value="5" onclick="input5()">
+            </div>
+            <div class="col-3 button-container">
+              <input class="calculator-button" type="button" value="6" onclick="input6()">
+            </div>
+            <div class="col-3 button-container">
+              <input class="calculator-button symbol" type="button" value="-" onclick="inputSubstract()">
+            </div>
+          </div>
+          <!-- third row -->
+          <!-- fourth row -->
+          <div class="row">
+            <div class="col-3 button-container">
+              <input class="calculator-button" type="button" value="1" onclick="input1()">
+            </div>
+            <div class="col-3 button-container">
+              <input class="calculator-button" type="button" value="2" onclick="input2()">
+            </div>
+            <div class="col-3 button-container">
+              <input class="calculator-button" type="button" value="3" onclick="input3()">
+            </div>
+            <div class="col-3 button-container">
+              <input class="calculator-button symbol" type="button" value="*" onclick="inputMultiple()">
+            </div>
+          </div>
+          <!-- fourth row -->
+          <!-- fifth row -->
+          <div class="row">
+            <div class="col-3 button-container">
+              <input class="calculator-button" type="button" value="0" onclick="input0()">
+            </div>
+            <div class="col-3 button-container">
+              <input class="calculator-button" type="button" value="." onclick="inputDot()">
+            </div>
+            <div class="col-3 button-container">
+              <input class="calculator-button clear" type="button" value="C" onclick="clearInput()">
+            </div>
+            <div class="col-3 button-container">
+              <input class="calculator-button symbol" type="button" value="/" onclick="inputDivide()">
+            </div>
+          </div>
+          <!-- fifth row -->
+        </div>
+        <!-- numpad -->
+      </div>
+    </div>
+    <!-- calculator -->
+
+
+
+
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/ace469e23c.js" crossorigin="anonymous"></script>
+    <!-- custom javascript -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

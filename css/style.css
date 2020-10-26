@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: url("../img/bg.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 300px;
+  background: url("../img/phone.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  overflow: hidden;
+}
+
+.phone-bg {
+  height: 545px;
+  width: 260px;
+  border-radius: 25px;
+  background: url("../img/phone-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* *calculator */
+.calculator {
+  height: 545px;
+  width: 260px;
+  border-radius: 25px;
+  overflow: hidden;
+  background: rgba(3, 9, 21, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+/* input */
+#enter {
+  height: 200px;
+  width: 250px;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 50px;
+  text-shadow: 0 0 10px black;
+  text-align: right;
+}
+/* input */
+
+/* buttons */
+.buttons {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -30px;
+  background: linear-gradient(to bottom, rgba(3, 9, 21, 0), rgba(3, 9, 21, 1));
+}
+
+.button-container {
+  padding: 0;
+  height: 50px;
+  width: 65px;
+}
+
+.brackets {
+  padding: 0;
+  height: 50px;
+  width: 97.5px;
+}
+
+.calculator-button {
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  color: white;
+  margin: 0;
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.calculator-button:focus {
+  outline: 0 !important;
+}
+
+.symbol {
+  background: rgba(20, 68, 116, 0.6);
+}
+
+.clear {
+  background: rgba(116, 20, 20, 0.6);
+}
+/* buttons */
+/* *calculator */
